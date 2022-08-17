@@ -17,11 +17,13 @@ plugins=(
         )
 
 
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 
 
 # oh-my-zsh.sh이 위의 설정을 읽음 (순서 변경X)
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+
 
 # Load an terminal configuration of zsh
 [ -f $ZSH_RYUL/terminal.zshrc ] && source $ZSH_RYUL/terminal.zshrc

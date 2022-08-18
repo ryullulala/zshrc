@@ -1,12 +1,5 @@
-# 개인 경로 설정
-export ZSH_RYUL=$HOME/.zsh
-
-# oh-my-zsh 경로 설정
-export ZSH="$HOME/.oh-my-zsh"   
-
 # oh-my-zsh 테마 설정
-ZSH_THEME="agnoster"
-# ZSH_THEME="typewritten/typewritten" (git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten)
+ZSH_THEME="agnoster" # ZSH_THEME="typewritten/typewritten" (git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten)
 
 
 # oh-my-zsh 플러그인 설정
@@ -17,12 +10,20 @@ plugins=(
         )
 
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# oh-my-zsh 경로 설정
+export ZSH="$HOME/.oh-my-zsh"  
 
 
+# custom 경로 설정
+export ZSH_RYUL=$HOME/.zsh
 
-# oh-my-zsh.sh이 위의 설정을 읽음 (순서 변경X)
+
+# 순서 변경 x
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+
+
+# Load an path configuration of zsh
+[ -f $ZSH_RYUL/env.zshrc ] && source $ZSH_RYUL/env.zshrc
 
 
 # Load an terminal configuration of zsh
@@ -35,3 +36,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Load an completion configuration of zsh
 [ -f $ZSH_RYUL/completion.zshrc ] && source $ZSH_RYUL/completion.zshrc
+
+
+# Load an homebrew configuration of zsh
+which brew > /dev/null \
+  && eval "$(/opt/homebrew/bin/brew shellenv)"

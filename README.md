@@ -2,12 +2,12 @@
 ---
 
 ```shell
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 $ git clone https://github.com/ryullulala/zshrc ~/.zsh
-$ ln -s ~/.zsh/zshrc ~/.zshrc
-
-# if ~/.zshrc already exist then remove it and link again
-$ rm -rf ~/.zshrc
+$ rm -rf ~/.zshrc # WARNING (if its already exist, backup first)
 $ ln -s ~/.zsh/zshrc ~/.zshrc
 ```
 
 
+## References
+- https://github.com/posquit0/zshrc

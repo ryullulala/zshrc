@@ -2,7 +2,7 @@
 export ZSH_RYUL=$HOME/.zsh
 
 # oh-my-zsh 경로 설정
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"   
 
 # oh-my-zsh 테마 설정
 ZSH_THEME="agnoster"

@@ -16,3 +16,7 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+
+# GCP(gcloud) Auto Complete
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc

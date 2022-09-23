@@ -8,3 +8,10 @@ prompt_context() {
      prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
    fi
 }
+
+# Load gcloud sdk
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+
+
+# Load an homebrew configuration of zsh
+eval "$(/opt/homebrew/bin/brew shellenv)"

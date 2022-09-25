@@ -2,11 +2,17 @@
 ZSH_THEME="agnoster"  # ZSH_THEME="typewritten/typewritten" (git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten)
 
 
-# oh-my-zsh 플러그인 설정
+# oh-my-zsh 플러그인, auto-completion
 plugins=(
-        git 
-        zsh-autosuggestions #git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-        zsh-syntax-highlighting #git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+        # git
+        # docker
+        # aws 
+        # kubectl
+        brew 
+        terraform
+        gcloud
+        zsh-autosuggestions # git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+        zsh-syntax-highlighting # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
         )
 
 
@@ -32,3 +38,5 @@ export ZSH_RYUL=$HOME/zsh
 
 # Load an completion configuration of zsh
 [ -f $ZSH_RYUL/completion.zshrc ] && source $ZSH_RYUL/completion.zshrc
+
+

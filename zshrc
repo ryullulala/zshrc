@@ -6,11 +6,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # 프롬프트 사용자 이름, 컴퓨터 이름 삭제
-prompt_context() {}
+#prompt_context() {}
 
 
 # oh-my-zsh 테마 설정
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k" #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # oh-my-zsh 플러그인, auto-completion
 plugins=(

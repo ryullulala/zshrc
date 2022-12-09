@@ -18,7 +18,7 @@ plugins=(
 #         docker
 #         kubectl
 #         aws
-#         brew
+        brew
         terraform
         gcloud
         zsh-autosuggestions # git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -48,3 +48,8 @@ export ZSH_RYUL="$HOME/zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="$PATH:$HOME/bin"
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+export cloud=/Users/ryul/Google\ Drive/My\ Drive
